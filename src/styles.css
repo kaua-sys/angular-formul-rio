@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NZ+Guides&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Playwrite NZ Guides", cursive;
+}
+
+:root{
+    --div-fundo: #F3F4F6;
+    --Formulário: #FFFFFF;
+    --Título: #166534;
+    --Botão: #22C55E;
+    --Botão-hover: #16A34A;
+    --Texto: #374151;
+}
+
+body{
+    margin: 20px;
+}
