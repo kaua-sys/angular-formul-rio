@@ -10,14 +10,21 @@
 
         <div id="div-btn">
         <button type="button" id="btnAdd" (click)="addItem()">Adicionar</button>
-        <button type="button" id="limpar">Limpar Tudo</button>
+        <button type="button" id="limpar" (click)="limparTudo()">Limpar Tudo</button>
         </div>
     </form>
 
     <div id="div-list">
-        <div class="div-item">1 - Pão - 4,50</div>
-        <div class="div-item">2 - Manteiga - 16,00</div>
-        <div class="div-item">3 - Café - 12,80</div>
+
+        @for(elem of listaItens; track elem.idProduto){
+            <div class="div-item">
+            <input type="checkbox" [checked] = "elem.statusSelecionado">&nbsp;&nbsp;
+
+            {{elem.idProduto}} - {{elem.descricaoProduto}} R$ {{elem.valorUnitario}}
+            </div>
+        }@empty{
+            <div class="div-item">Nenhum Produtos na Lista</div>
+        }
     </div>
     
 </div>

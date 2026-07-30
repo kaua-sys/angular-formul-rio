@@ -77,6 +77,8 @@ button:hover{
 
 button:hover{
     background-color: var(--Botão-hover);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 10px rgba(0,0,0,.2);
 }
 
 h3{
