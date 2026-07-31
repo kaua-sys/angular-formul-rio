@@ -26,7 +26,7 @@ label{
     letter-spacing: 5px;
 }
 
-input{
+input[type="text"],input[type="number"]{
     width: 100%;
     height: 40px;
     padding: 10px;
@@ -86,4 +86,21 @@ h3{
     padding: 20px 0;
     letter-spacing: 5px;
     color: var(--Título);
+}
+
+.itemSelecionado {
+    text-decoration: line-through;
+    color: #888;
+    background-color: #f0f0f0;
+    border-left: 4px solid #888;
+    border-radius: 8px;
+    margin-left: 3px;
+    display: flex;
+    gap: 12px;
+    padding: 12px 13px;
+}
+
+input[type="checkbox"] {
+    accent-color: var(--Botão);
+    cursor: pointer;
 }
