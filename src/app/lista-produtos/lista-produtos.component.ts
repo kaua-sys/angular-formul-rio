@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Item } from './item';
+import { NgClass } from '@angular/common';
 
 @Component({
   selector: 'app-lista-produtos',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule,NgClass],
   templateUrl: './lista-produtos.component.html',
   styleUrl: './lista-produtos.component.css'
 })
